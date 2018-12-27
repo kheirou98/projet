@@ -1,0 +1,291 @@
+a{
+    color:red;
+    font-style:italic;
+    font-size:bold;
+}
+.tableau{
+    padding-top:10px;
+}
+.tableau body{
+    margin:50px;
+    padding: 25px;
+    border: 1px solid whitesmoke;
+}
+/*   premiere ligne d'un tableau     */
+.tableau tr :first-child{
+    border: 1px solid black;
+}
+/*  premiere colone d'un tableau     */
+.tableau th{
+    color: blue;
+}
+.tableau  thead>tr:first-child>th {
+    font-style: italic;
+    font-weight: bold;
+    color: blue;
+}
+.lien{
+    font-style:italic;
+    font-weight:bold;
+
+}
+ul a:hover ,ol a:hover{
+    color:purple
+}
+
+h1{
+    font-weight:bold;
+    font-family: fantasy;
+    font-size: 50px;
+    color:blue;
+}
+ul {
+    padding:0;
+    margin:0;
+    list-style-type:none;
+}
+li {
+    margin-left:2px;
+    float:left; /*pour IE*/
+}
+ul li a {
+    display:block;
+    width:100px;
+    background-color:#6495ED;
+    color:black;
+    text-decoration:none;
+    text-align:center;
+    float:left;
+    padding:5px;
+    border:2px solid;
+    /*pour avoir un effet "outset" avec IE :*/
+    border-color:#DCDCDC #696969 #696969 #DCDCDC;
+}
+.video{
+    text-align: center;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:0px;
+    padding-top:40px;
+}
+video{
+    width:50%;
+}
+section{
+    width:100%;
+    padding:0px;
+    margin:0px;
+}
+.entete{
+    color:green;
+    font-style:italic;
+    font-weight:bold;
+    text-align: center;
+}
+.entete2{
+    color:purple;
+    font-style:italic;
+    font-weight:bold;
+    text-align: center;
+}
+td{
+    font-size: 20px;
+    font-weight:bold;
+    text-align: center;
+    font-style:italic;
+}
+p{
+    font-size: 20px;
+    font-weight:bold;
+    font-style:italic;
+}
+#txt{
+    font-weight:bold;
+    padding-top:25px;
+}
+img.image{
+    opacity:0.5 ;
+    width:"50%" ;
+
+}
+img.image:hover{
+    width:100%;
+    opacity:1
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+@-webkit-keyframes animation2
+{
+    from
+    {
+        -webkit-transform: translate(0px,0px);
+        -webkit-animation-timing-function: ease;
+    }
+
+    25%
+    {
+        -webkit-transform: translate(100px,0px);
+        -webkit-animation-timing-function: ease-in;
+    }
+
+
+    50%
+    {
+        -webkit-transform: translate(100px,50px);
+        -webkit-animation-timing-function: ease-out;
+    }
+
+    75%
+    {
+        -webkit-transform: translate(0px,50px);
+        -webkit-animation-timing-function: ease-in-out;
+    }
+
+    to
+    {
+        -webkit-transform: translate(0px,0px);
+        -webkit-animation-timing-function: linear;
+    }
+}
+div.animation img
+{
+    width:100%;
+    animation-name: animation2;
+    -webkit-animation-name: animation2;
+    animation-duration: 10s;
+    -webkit-animation-duration: 10s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+
+}
+div.animation img:hover
+{
+    animation-play-state : paused;
+    -webkit-animation-play-state : paused;
+}
+div.animation:nth-child(1) img
+{
+    width:40%;
+    height:30%;
+    padding:1px;
+    border:20px solid;
+    align: left;
+
+}
+div.animation:nth-child(2) img
+{
+    width:40%;
+    height:30%;
+    padding:1px;
+    border:20px solid;
+    align:right;
+}
+div.animation:nth-child(3) img
+{
+    width:40%;
+    padding:1px;
+    height:30%;
+    border:20px solid;
+    align:left;
+}
+div.animation:nth-child(4) img
+{
+    width:0%;
+    height:30%;
+    padding:1px;
+    border:20px solid;
+    align:right;
+}
+div.animation{
+    width:100%;
+    padding-top:10px;
+}
+.diaporama:hover
+{
+    animation-play-state : paused;
+    -webkit-animation-play-state : paused;
+}
+.diaporama{
+    margin:0 auto;
+    width:960px;
+    height:355px;
+    border:20px solid black;
+    background-image:url("../Image/Argentina.jpg");
+    webkit-animation-name: diapo;
+    webkit-animation-duration: 15s;
+    webkit-animation-timing-function: linear;
+    webkit-animation-iteration-count: infinite;
+    webkit-animation-direction: reverse;
+
+    moz-animation-name: diapo;
+    moz-animation-duration: 15s;
+    moz-animation-timing-function: linear;
+    moz-animation-iteration-count: infinite;
+    moz-animation-direction: reverse;
+
+    animation-name: diapo;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+
+}
+@webkit-keyframes diapo{
+0%{background-image: url("../Image/Argentina.jpg");}
+25%{background-image: url("../Image/Manchester united3.jpg");}
+50%{background-image: url("../Image/Manchester united4.jpg");}
+75%{background-image: url("../Image/Manchester united6.jpg");}
+}
+@moz-keyframes diapo{
+0%{background-image: url("../Image/Argentina.jpg");}
+25%{background-image: url("../Image/Manchester united3.jpg");}
+50%{background-image: url("../Image/Manchester united4.jpg");}
+75%{background-image: url("../Image/Manchester united6.jpg");}
+}
+@keyframes diapo{
+    0%{background-image: url("../Image/Argentina.jpg");}
+    25%{background-image: url("../Image/Manchester united3.jpg");}
+    50%{background-image: url("../Image/Manchester united4.jpg");}
+    75%{background-image: url("../Image/Manchester united6.jpg");}
+}
+
+#ilogin {
+    float: left;
+}
+
+#ilogin a {
+    display: block;
+    color: green;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
